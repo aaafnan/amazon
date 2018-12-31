@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Amazon]">
+  <parameter name="os" value="windows"/>
+  <parameter name="os_version" value="10"/>
+  <parameter name="browserVersion" value="71.0"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="url" value="http://amazon.com"/>
+  <test name="Amazon Home(failed)">
+    <classes>
+      <class name="test.pageobjects.TestFooterTopLinks">
+        <methods>
+          <include name="closeOut"/>
+          <include name="generateReport"/>
+          <include name="extentSetup"/>
+          <include name="afterEachTestMethod"/>
+          <include name="initializationOfObjects"/>
+          <include name="countryTabTest"/>
+          <include name="startExtent"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.pageobjects.TestFooterTopLinks -->
+      <class name="test.pageobjects.TestShoppingCart">
+        <methods>
+          <include name="closeOut"/>
+          <include name="generateReport"/>
+          <include name="addToCartTest"/>
+          <include name="extentSetup"/>
+          <include name="selectLaptopTest"/>
+          <include name="afterEachTestMethod"/>
+          <include name="initializationOfObject"/>
+          <include name="startExtent"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.pageobjects.TestShoppingCart -->
+    </classes>
+  </test> <!-- Amazon Home(failed) -->
+</suite> <!-- Failed suite [Amazon] -->
